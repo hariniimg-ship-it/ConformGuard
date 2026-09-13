@@ -1,0 +1,1 @@
+{"tests":[{"id":"oidc-auth-code-pkce","name":"Authorization Code + PKCE","status":"PASS"},{"id":"oidc-jwks-rotation","name":"JWKS rotation","status":"PASS"},{"id":"oidc-redirect-uri","name":"Redirect URI validation","status":"PASS"}]}

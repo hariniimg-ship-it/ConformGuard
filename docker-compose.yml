@@ -1,0 +1,7 @@
+services:
+  conformguard:
+    build: .
+    command: ["--combined", "--mock", "--output-dir", "/artifacts"]
+    volumes:
+      - ./artifacts:/artifacts
+    # For live integrations, add CONFORMGUARD_OPENID_TOKEN / CONFORMGUARD_INJI_TOKEN here

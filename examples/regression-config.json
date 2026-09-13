@@ -1,0 +1,8 @@
+{
+  "project": "ConformGuard regression demo",
+  "quality_gate": {"minimum_score": 95, "block_regressions": true},
+  "components": {
+    "certify": {"endpoint": "https://REPLACE_WITH_OPENID_SUITE_RESULT_ENDPOINT/certify", "token_env": "CONFORMGUARD_OPENID_TOKEN", "mock_result": "examples/regression-result.json"},
+    "verify": {"endpoint": "https://REPLACE_WITH_INJI_RESULT_ENDPOINT/verify", "token_env": "CONFORMGUARD_INJI_TOKEN", "mock_result": "data/verify-mock.json"}
+  }
+}

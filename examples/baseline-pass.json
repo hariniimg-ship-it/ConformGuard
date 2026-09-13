@@ -1,0 +1,1 @@
+{"schema_version":"1.0","components":{"certify":{"score":100,"cases":[{"id":"oidc-auth-code-pkce","status":"passed"},{"id":"oidc-jwks-rotation","status":"passed"},{"id":"oidc-redirect-uri","status":"passed"}]},"verify":{"score":100,"cases":[{"id":"inji-vp-signature","status":"passed"},{"id":"inji-vc-expiry","status":"passed"},{"id":"inji-status-list","status":"passed"}]}}}

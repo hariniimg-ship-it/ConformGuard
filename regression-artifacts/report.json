@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-09-13T14:28:39.683387+00:00",
+  "project": "ConformGuard regression demo",
+  "components": {
+    "certify": {
+      "component": "certify",
+      "total": 3,
+      "passed": 2,
+      "failed": 1,
+      "skipped": 0,
+      "score": 66.67,
+      "status": "FAIL",
+      "source": "mock",
+      "cases": [
+        {
+          "id": "oidc-auth-code-pkce",
+          "name": "Authorization Code + PKCE",
+          "status": "failed",
+          "detail": "nonce mismatch"
+        },
+        {
+          "id": "oidc-jwks-rotation",
+          "name": "JWKS rotation",
+          "status": "passed",
+          "detail": ""
+        },
+        {
+          "id": "oidc-redirect-uri",
+          "name": "Redirect URI validation",
+          "status": "passed",
+          "detail": ""
+        }
+      ]
+    }
+  },
+  "regressions": {
+    "certify": {
+      "baseline_found": true,
+      "new_failures": [
+        "oidc-auth-code-pkce"
+      ],
+      "score_delta": -33.33,
+      "regression": true
+    }
+  },
+  "quality_gates": {
+    "certify": [
+      {
+        "gate": "all tests pass",
+        "status": "FAIL",
+        "detail": "1 failed of 3"
+      },
+      {
+        "gate": "minimum score (95.0)",
+        "status": "FAIL",
+        "detail": "score is 66.7"
+      },
+      {
+        "gate": "no newly failing tests",
+        "status": "FAIL",
+        "detail": "oidc-auth-code-pkce"
+      }
+    ]
+  },
+  "status": "BLOCKED"
+}
